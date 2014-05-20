@@ -1,0 +1,80 @@
+﻿/*This is the style sheet for the Wiggins site. The first four styles are for the 
+  main page after that the styles are for all the pages throughout the site. */
+     
+#mainWrapper
+{
+    position:relative;
+    width:900px;
+    height:1000px;
+    margin:0 auto;
+}  
+
+/*Styles for pages throughout the site*/
+
+#wrapper 
+{
+    display: block;
+    margin: auto;
+    height: 400px;
+    width: 405px;
+}
+
+#container
+{
+    overflow: auto;
+}
+
+#slider
+{
+    display:block;
+    float: left;
+    height: 400px;
+    width: 405px;
+    overflow: hidden;
+    position: absolute;
+}
+
+#column
+{
+    height: 400px;
+    vertical-align: top;
+}
+
+#para
+{
+    vertical-align:bottom;
+}
+
+.table
+{
+    color:#BDBDBD;
+    font-size:x-large;
+    width: 900px;
+}
+
+#txtBesidePic
+{
+    display: block;
+    vertical-align: top;
+    padding-right: 5px;
+}
+
+p
+{
+    display: inline;
+}
+
+.textColor
+{
+    color:#BDBDBD;
+}
+
+.align
+{
+    text-align: center;
+}
+
+.tabelLabels
+{
+    width: 500px;
+}

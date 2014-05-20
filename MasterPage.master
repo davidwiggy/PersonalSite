@@ -1,0 +1,56 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<style type="text/css" >
+.banner
+{
+    position:relative;
+    font-style:inherit;
+    background-image: url('http://wiggins.somee.com/image/SteelBackground.jpg');
+    color:Black;
+    font-size:275%;
+    height:75px;
+    width:900px;
+    margin:0 auto;
+    text-align:center;
+    padding-top:15px;
+ 
+}
+#mainBody
+{
+    background-image: url('http://wiggins.somee.com/image/SiteBackground.jpg');
+    background-repeat:no-repeat;
+}
+</style>
+<link href="css/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <title>Timothy David Wiggins</title>
+    <h1 class="banner">Timothy David Wiggins</h1>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="mainBody">
+    <form id="mainWrapper" runat="server">
+    <div>
+
+        <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" 
+            Orientation="Horizontal" RenderingMode="List" 
+            StaticDisplayLevels="2" Font-Bold="True" Font-Size="X-Large" Font-Underline="False" 
+            StaticSubMenuIndent="16px" ForeColor="White">
+            <StaticMenuItemStyle HorizontalPadding="40px" />
+        </asp:Menu>
+        <hr />
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+
+
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+    </div>
+    </form>
+</body>
+</html>
